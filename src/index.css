@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sports E-commerce Design System - Energetic & Modern */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 15% 20%;
+
+    /* Sporty Primary - Deep Blue */
+    --primary: 214 85% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 214 85% 35%;
+
+    /* Energetic Secondary - Vibrant Green */
+    --secondary: 142 71% 45%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 142 71% 55%;
+
+    /* Neutral Grays */
+    --muted: 210 15% 96%;
+    --muted-foreground: 210 15% 45%;
+
+    /* Energy Accent - Orange */
+    --accent: 25 95% 58%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 25 95% 68%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 15% 90%;
+    --input: 210 15% 94%;
+    --ring: 214 85% 25%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 85% 25%), hsl(214 85% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(142 71% 45%), hsl(142 71% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 58%), hsl(25 95% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 85% 25%) 0%, hsl(142 71% 45%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px -1px hsl(210 15% 20% / 0.1);
+    --shadow-md: 0 4px 12px -2px hsl(210 15% 20% / 0.15);
+    --shadow-lg: 0 8px 24px -4px hsl(210 15% 20% / 0.2);
+    --shadow-sport: 0 8px 32px -8px hsl(214 85% 25% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 210 20% 8%;
+    --foreground: 210 15% 95%;
+
+    --card: 210 20% 10%;
+    --card-foreground: 210 15% 95%;
+
+    --popover: 210 20% 10%;
+    --popover-foreground: 210 15% 95%;
+
+    /* Dark mode sporty colors */
+    --primary: 214 85% 65%;
+    --primary-foreground: 210 20% 8%;
+    --primary-light: 214 85% 75%;
+
+    --secondary: 142 71% 55%;
+    --secondary-foreground: 210 20% 8%;
+    --secondary-light: 142 71% 65%;
+
+    --muted: 210 20% 15%;
+    --muted-foreground: 210 15% 65%;
+
+    --accent: 25 95% 68%;
+    --accent-foreground: 210 20% 8%;
+    --accent-light: 25 95% 78%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 210 20% 8%;
+
+    --border: 210 20% 20%;
+    --input: 210 20% 15%;
+    --ring: 214 85% 65%;
+
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 85% 55%), hsl(214 85% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(142 71% 55%), hsl(142 71% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 68%), hsl(25 95% 78%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 85% 55%) 0%, hsl(142 71% 55%) 100%);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
